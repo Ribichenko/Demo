@@ -1,0 +1,21 @@
+﻿<Page x:Class="Ribichenko.Demo.login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Ribichenko.Demo"
+      mc:Ignorable="d" 
+      d:DesignHeight="680" d:DesignWidth="1280"
+      Title="login">
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="142">
+        <Label Content="Введите почту:" HorizontalAlignment="Left" VerticalAlignment="Center" Width="128"  ></Label>
+        <TextBox x:Name="textBox_login" HorizontalAlignment="Center" VerticalAlignment="Center" Width="130" Height="24" ></TextBox>
+        <Label Content="Введите пароль:" HorizontalAlignment="Left" VerticalAlignment="Center" Width="128" />
+        <PasswordBox x:Name="password" HorizontalAlignment="Center" VerticalAlignment="Center" Width="130" Height="24" ></PasswordBox>
+        <Grid>
+            <Button x:Name="enter" Content="Войти" HorizontalAlignment="Center" Width="50" VerticalAlignment="Center"  Click="enter_Click" Margin="0,10,80,-10" ></Button>
+            <Button x:Name="regin" Content="Регистрация" Click="regin_Click" Width="76" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="55,10,-1,-10"  ></Button>
+        </Grid>
+    </StackPanel>
+</Page>
